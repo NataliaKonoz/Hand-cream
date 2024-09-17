@@ -1,0 +1,148 @@
+.advantages-section {
+  &__title {
+    @media screen and (min-width: $--bp-mobile) {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &::after {
+      content: '';
+
+      @media screen and (min-width: $--bp-mobile) {
+        display: block;
+        position: absolute;
+        background-position: center;
+        right: -20%;
+        top: 10px;
+      }
+      @media screen and (min-width: $--bp-tablet) {
+        right: -26%;
+        top: -2px;
+      }
+      @media screen and (min-width: $--bp-desktop) {
+        right: -30%;
+      }
+    }
+
+    &::before {
+      content: '';
+      @media screen and (min-width: $--bp-mobile) {
+        padding-bottom: 6px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+      @media screen and (min-width: $--bp-tablet) {
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: $--bp-mobile) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 16px;
+      padding-top: 40px;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      padding: 0 140px;
+      padding-top: 50px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      padding: 0 100px;
+      padding-top: 50px;
+    }
+  }
+
+  &__container-points {
+    @media screen and (min-width: $--bp-mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex-grow: 1;
+      padding-top: 50px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      padding-top: 55px;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      padding-top: 30px;
+    }
+  }
+
+  &__points-item:last-child {
+    @media screen and (min-width: $--bp-tablet) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__points-item {
+    @media screen and (min-width: $--bp-mobile) {
+      display: flex;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      gap: 24px;
+      padding-top: 8px;
+    }
+  }
+
+  &__points-item-icon {
+    @media screen and (min-width: $--bp-mobile) {
+      margin: auto 0;
+      flex-shrink: 0;
+    }
+  }
+
+  &__points-contain-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  &__container-plus-minus {
+    display: flex;
+  }
+
+  &__plus-title,
+  &__minus-title {
+    @media screen and (min-width: $--bp-mobile) {
+      padding: 4px 10px;
+      text-align: center;
+    }
+  }
+
+  &__plus-title {
+    @media screen and (min-width: $--bp-mobile) {
+      align-items: center;
+    }
+  }
+
+  &__plus-icon,
+  &__minus-icon {
+    @media screen and (min-width: $--bp-mobile) {
+      background-position: center;
+    }
+  }
+
+  &__container-minus {
+    @media screen and (min-width: $--bp-mobile) {
+      display: none;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      display: block;
+    }
+  }
+}

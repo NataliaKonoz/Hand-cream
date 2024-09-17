@@ -1,0 +1,61 @@
+.videoinstruction-section {
+  background-image: url(/images/videoinstruction-section-images/ellipse-fone.png);
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $--bp-mobile) {
+    background-image: url(/images/videoinstruction-section-images/ellipse-fone-mobile.png);
+  }
+
+  @media screen and (min-width: $--bp-tablet) {
+    background-image: url(/images/videoinstruction-section-images/ellipse-fone.png);
+  }
+
+  &__images-laptop {
+    @media screen and (min-width: $--bp-mobile) {
+      width: 350px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 650px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      width: 750px;
+    }
+  }
+
+  &__title {
+    @media screen and (min-width: $--bp-mobile) {
+      max-width: 200px;
+      font-family: 'Gunnyrewritten';
+      color: var(--color-brand-dark-blue);
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      max-width: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url(/images/videoinstruction-section-images/white-heart.png);
+    background-size: 94%;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $--bp-mobile) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.instruction-section {
+  @media screen and (min-width: $--bp-mobile) {
+    overflow-x: hidden;
+  }
+
+  &__card {
+    max-width: 640px;
+
+    &--first-step::after {
+      background-image: url(/images/instruction-section-images/branded-pink-drawings/one.png);
+    }
+
+    &--second-step::after {
+      background-image: url(/images/instruction-section-images/branded-pink-drawings/two.png);
+    }
+
+    &--third-step::after {
+      background-image: url(/images/instruction-section-images/branded-pink-drawings/three.png);
+    }
+
+    &--fourth-step::after {
+      background-image: url(/images/instruction-section-images/branded-pink-drawings/four.png);
+    }
+
+    &--first-step::after,
+    &--second-step::after,
+    &--third-step::after,
+    &--fourth-step::after {
+      @media screen and (min-width: $--bp-mobile) {
+        content: '';
+        height: 69px;
+        width: 67px;
+      }
+    }
+  }
+
+  &__contain-photo {
+    @media screen and (min-width: $--bp-mobile) {
+      background-image: url(/images/instruction-section-images/branded-pink-drawings/plus.png);
+      background-repeat: no-repeat;
+    }
+
+    &--third {
+      @media screen and (min-width: $--bp-mobile) {
+        background-image: url(/images/instruction-section-images/branded-pink-drawings/drawing_glass.png);
+        background-size: 76px;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-size: 21%;
+      }
+    }
+  }
+
+  &__photo-tube {
+    @media screen and (min-width: $--bp-mobile) {
+      width: 160px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--tube2 {
+      @media screen and (min-width: $--bp-mobile) {
+        background-image: url(/images/instruction-section-images/branded-pink-drawings/plus.png);
+        background-repeat: no-repeat;
+        background-size: 26px;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-size: 32px;
+      }
+    }
+  }
+
+  &__photo-container {
+    @media screen and (min-width: $--bp-mobile) {
+      width: 224px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 100%;
+    }
+
+    &--glass {
+      @media screen and (min-width: $--bp-mobile) {
+        background-image: url(/images/instruction-section-images/branded-pink-drawings/plus.png);
+        background-repeat: no-repeat;
+        background-size: 26px;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-size: 32px;
+      }
+    }
+  }
+
+  &__plaster-cast {
+    @media screen and (min-width: $--bp-mobile) {
+      width: 160px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 100%;
+    }
+  }
+
+  &__card-text {
+    max-width: 270px;
+  }
+}

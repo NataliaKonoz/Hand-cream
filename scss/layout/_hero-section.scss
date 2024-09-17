@@ -1,0 +1,90 @@
+.hero-section {
+  @media screen and (min-width: $--bp-mobile) {
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  @media screen and (min-width: $--bp-tablet) {
+    display: block;
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 70px;
+  }
+  @media screen and (min-width: $--bp-desktop) {
+    padding-left: 150px;
+    padding-top: 100px;
+  }
+
+  &__title {
+    @media screen and (min-width: $--bp-mobile) {
+      margin: 0 auto;
+      padding-top: 16px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__picture-materials {
+    @media screen and (min-width: $--bp-mobile) {
+      position: static;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      position: absolute;
+      top: -6%;
+      right: 2%;
+      z-index: -1;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      top: -10%;
+      right: 1%;
+    }
+  }
+
+  &::before {
+    content: '';
+
+    @media screen and (min-width: $--bp-tablet) {
+      right: 3%;
+      top: 80px;
+      display: block;
+      position: absolute;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      top: 110px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 70px;
+
+    @media screen and (min-width: $--bp-mobile) {
+      right: 8px;
+      top: 25%;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      right: 420px;
+      top: 200px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      right: 520px;
+      top: 280px;
+    }
+  }
+}

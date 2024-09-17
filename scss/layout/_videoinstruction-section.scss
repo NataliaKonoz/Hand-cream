@@ -1,0 +1,62 @@
+.videoinstruction-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: $--bp-mobile) {
+    background-position-y: -40px;
+    background-position-x: right;
+    margin: 20px 16px 0;
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: $--bp-tablet) {
+    background-position-y: -120px;
+    margin: 20px 50px 0;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: $--bp-desktop) {
+    background-position-y: -60px;
+    margin: 24px 86px 0;
+  }
+
+  &__images-laptop {
+    @media screen and (min-width: $--bp-mobile) {
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    padding: 16px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__text {
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    @media screen and (min-width: $--bp-mobile) {
+      top: 60%;
+      right: 33px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      top: 0%;
+      right: 21px;
+      transform: rotate(20deg);
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      top: 20%;
+      right: 80px;
+    }
+  }
+}

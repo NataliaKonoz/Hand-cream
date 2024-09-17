@@ -1,0 +1,133 @@
+.instruction-section {
+  @media screen and (min-width: $--bp-mobile) {
+    padding-top: 16px;
+  }
+
+  @media screen and (min-width: $--bp-tablet) {
+    padding: 200px 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    position: relative;
+    margin: 0 auto;
+
+    &--first-step::after,
+    &--second-step::after,
+    &--third-step::after,
+    &--fourth-step::after {
+      @media screen and (min-width: $--bp-mobile) {
+        content: '';
+        top: 162px;
+        position: absolute;
+        left: 45%;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        top: 184px;
+      }
+    }
+  }
+
+  &__contain-photo {
+    @media screen and (min-width: $--bp-mobile) {
+      gap: 0;
+      display: flex;
+      justify-content: center;
+      background-position-y: center;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      gap: 16px;
+    }
+
+    &--first {
+      background-position-x: 54%;
+      padding-left: 20px;
+    }
+
+    &--second {
+      @media screen and (min-width: $--bp-mobile) {
+        background-position: 54%;
+        padding-right: 30px;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-position: 58%;
+      }
+    }
+
+    &--third {
+      @media screen and (min-width: $--bp-mobile) {
+        justify-content: center;
+        position: relative;
+        gap: 0;
+        padding-left: 44px;
+        background-position: 47%;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-position: 46%;
+        justify-content: flex-end;
+        gap: 24px;
+      }
+    }
+
+    &--fourth {
+      @media screen and (min-width: $--bp-mobile) {
+        padding-right: 26px;
+        background-position: 51%;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-position: 52%;
+      }
+    }
+  }
+
+  &__photo-tube {
+    &--tube2 {
+      @media screen and (min-width: $--bp-mobile) {
+        background-position-y: 50%;
+        background-position-x: 64%;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-position-x: 70%;
+      }
+    }
+  }
+
+  &__photo-container {
+    &--glass {
+      @media screen and (min-width: $--bp-mobile) {
+        background-position-y: 50%;
+        background-position-x: 15%;
+      }
+
+      @media screen and (min-width: $--bp-tablet) {
+        background-position-x: 12%;
+      }
+    }
+  }
+
+  &__card-text {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+
+    @media screen and (min-width: $--bp-mobile) {
+      padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      padding-bottom: 60px;
+    }
+  }
+}

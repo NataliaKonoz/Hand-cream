@@ -1,0 +1,158 @@
+.advantages-section {
+  &__title {
+    @media screen and (min-width: $--bp-mobile) {
+      font-size: 26px;
+      color: var(--color-brand-white);
+      max-width: 300px;
+      font-family: 'Gunnyrewritten';
+    }
+    @media screen and (min-width: $--bp-tablet) {
+      font-size: 36px;
+      max-width: 500px;
+    }
+
+    &::after {
+      content: '';
+
+      @media screen and (min-width: $--bp-mobile) {
+        background-image: url(/images/advantages-section-images/premium.png);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        height: 107px;
+        width: 107px;
+      }
+      @media screen and (min-width: $--bp-tablet) {
+        background-size: 74%;
+      }
+    }
+
+    &::before {
+      content: '';
+      @media screen and (min-width: $--bp-mobile) {
+        width: 100vw;
+        height: 100%;
+        background-color: var(--color-brand-dark-blue);
+      }
+    }
+  }
+
+  &__points-item:last-child {
+    @media screen and (min-width: $--bp-tablet) {
+      border: none;
+      border-bottom: 1px solid var(--color-brand-peach);
+      border-top: 1px solid var(--color-brand-peach);
+    }
+  }
+
+  &__points-item {
+    @media screen and (min-width: $--bp-mobile) {
+      height: 66px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      height: auto;
+      border: none;
+      border-top: 1px solid var(--color-brand-peach);
+    }
+  }
+
+  &__points-item-icon {
+    @media screen and (min-width: $--bp-mobile) {
+      height: 32px;
+      width: 32px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  &__points-contain-info {
+    @media screen and (min-width: $--bp-tablet) {
+      max-width: 230px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      max-width: none;
+    }
+  }
+
+  &__points-item-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-brand-dark-blue);
+  }
+
+  &__plus-title,
+  &__minus-title {
+    @media screen and (min-width: $--bp-mobile) {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__plus-title {
+    @media screen and (min-width: $--bp-mobile) {
+      color: var(--color-brand-white);
+      background-color: var(--color-brand-peach);
+      border-top-left-radius: 16px;
+      width: 100px;
+      max-width: 53px;
+      border-top-right-radius: 16px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      border-top-right-radius: 0;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      max-width: none;
+    }
+  }
+
+  &__plus-icon,
+  &__minus-icon {
+    @media screen and (min-width: $--bp-mobile) {
+      background-repeat: no-repeat;
+      background-size: 40%;
+      height: 84px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      height: 94px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      height: 80px;
+    }
+  }
+
+  &__plus-icon {
+    background-color: #fdefe7;
+    background-image: url(/images/advantages-section-images/check-mark.png);
+  }
+
+  &__minus-title {
+    @media screen and (min-width: $--bp-mobile) {
+      color: var(--color-brand-white);
+      background-color: var(--color-brand-dark-blue);
+      border-top-right-radius: 16px;
+      max-width: 53px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      max-width: none;
+    }
+  }
+
+  &__minus-icon {
+    background-color: #ece8e2;
+    background-image: url(/images/advantages-section-images/cross.png);
+  }
+}

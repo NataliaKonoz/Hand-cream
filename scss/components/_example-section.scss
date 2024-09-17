@@ -1,0 +1,163 @@
+.example-section {
+  @media screen and (min-width: $--bp-mobile) {
+    background-image: none;
+  }
+
+  @media screen and (min-width: $--bp-tablet) {
+    background-size: 160px;
+    background-image: url(/images/example-section-images/plaster_cast.png);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $--bp-desktop) {
+    background-size: 200px;
+  }
+
+  &__contain-content {
+    @media screen and (min-width: $--bp-mobile) {
+      width: 235px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 240px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      width: 276px;
+    }
+
+    &--wedding {
+      &::after {
+        content: '';
+        background-image: url(/images/example-section-images/durk-heart.png);
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: $--bp-mobile) {
+          width: 80px;
+          height: 80px;
+          background-size: 95%;
+        }
+
+        @media screen and (min-width: $--bp-tablet) {
+          width: 100px;
+          height: 100px;
+        }
+
+        @media screen and (min-width: $--bp-desktop) {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+
+    &--hands {
+      &::before {
+        content: '';
+        background-image: url(/images/example-section-images/bright_hearts.png);
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: $--bp-mobile) {
+          width: 40px;
+          height: 40px;
+          background-size: 95%;
+        }
+
+        @media screen and (min-width: $--bp-tablet) {
+          width: 60px;
+          height: 60px;
+        }
+
+        @media screen and (min-width: $--bp-desktop) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    &--girlfriends {
+      &::after {
+        content: '';
+        background-image: url(/images/example-section-images/bright_hearts.png);
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: $--bp-mobile) {
+          width: 70px;
+          height: 70px;
+          background-size: 95%;
+        }
+
+        @media screen and (min-width: $--bp-tablet) {
+          width: 90px;
+          height: 90px;
+        }
+
+        @media screen and (min-width: $--bp-desktop) {
+          width: 110px;
+          height: 110px;
+        }
+      }
+    }
+
+    &--glasses {
+      &::after {
+        content: '';
+        background-image: url(/images/example-section-images/durk-heart.png);
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: $--bp-mobile) {
+          width: 50px;
+          height: 50px;
+          background-size: 95%;
+        }
+
+        @media screen and (min-width: $--bp-tablet) {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media screen and (min-width: $--bp-desktop) {
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: $--bp-mobile) {
+      height: 230px;
+      width: 230px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      height: 238px;
+      width: 238px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      height: 276px;
+      width: 276px;
+    }
+  }
+
+  &__text {
+    font-family: 'Gunnyrewritten';
+    background-color: var(--color-brand-peach);
+    color: var(--color-brand-white);
+    border-radius: 32px;
+
+    @media screen and (min-width: $--bp-mobile) {
+      width: 210px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      width: 214px;
+      font-size: 28px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      width: 260px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.hero-section {
+  &__title {
+    @media screen and (min-width: $--bp-mobile) {
+      max-width: 250px;
+      font-size: 36px;
+      color: var(--color-brand-dark-blue);
+      font-family: 'Gunnyrewritten';
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      max-width: 280px;
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      max-width: 336px;
+      font-size: 50px;
+    }
+
+    &--accent {
+      color: var(--color-brand-peach);
+    }
+  }
+
+  &__picture-materials {
+    @media screen and (min-width: $--bp-mobile) {
+      height: 320px;
+      width: 386px;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      height: 370px;
+      width: 440px;
+    }
+
+    @media screen and (min-width: $--bp-desktop) {
+      height: 500px;
+      width: 550px;
+    }
+  }
+
+  &::before {
+    content: '';
+
+    @media screen and (min-width: $--bp-mobile) {
+      background-image: none;
+    }
+
+    @media screen and (min-width: $--bp-tablet) {
+      background-image: url('/images/heart_icon.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 64px;
+      width: 61px;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('/images/bright_hearts.png');
+    height: 80px;
+    width: 77px;
+  }
+}
